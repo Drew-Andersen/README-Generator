@@ -8,7 +8,7 @@ const { default: Choices } = require('inquirer/lib/objects/choices');
 // Creates an array of questions for user input
 const questions = [];
 
-// Writes the README.md file
+// Function to write the README.md file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (error) => {
         error ? console.log(error) : console.log('README generated');
