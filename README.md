@@ -19,7 +19,7 @@ This application makes it easy to create a README.md file. After answering the q
 For this application you will need node.js installed. You can go to https://nodejs.org/en to download it. You can clone the repository on your local machine, or copy the files from the repository.
 
 ## Usage
-To use the application, you must have cloned down the repository and open the terminal on the index.js file. Once on the terminal, type 'node index.js' to run the JavaScript. The command line will prompt you to answer several questions about your project / application you are creating a README for. Your answers will be converted to Markdown and stored in the README.md file insid of the develop folder.
+To use the application, you must have cloned down the repository and open the terminal on the index.js file. Once on the terminal, type 'node index.js' to run the JavaScript. The command line will prompt you to answer several questions about your project / application you are creating a README for. Your answers will be converted to Markdown and stored in the README.md file.
 
 ## License
 N/A
