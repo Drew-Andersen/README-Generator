@@ -3,18 +3,19 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
 const colors = require('colors');
 const fs = require('fs');
+const { default: Choices } = require('inquirer/lib/objects/choices');
 
 // Creates an array of questions for user input
 const questions = [];
 
-// Function to write the README file
+// Writes the README.md file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (error) => {
         error ? console.log(error) : console.log('README generated');
     })
 }
 
-// TODO: Create a function to initialize app
+// Use inquirer to ask questions for the README generator
 function init() {
     inquirer
         .prompt([
@@ -47,7 +48,7 @@ function init() {
                 type: 'list',
                 name: 'license',
                 message: 'Please select a license.',
-                choises: ['No license', 'MIT license'],
+                choices: ['No license', 'MIT license'],
             },
             {
                 type: 'input',
@@ -56,7 +57,9 @@ function init() {
             }
         ])
         .then((data) => {
-            fs.writeFile('README.md', generateMarkdown(data));
+            fs.writeFile('README.md', generateMarkdown(data), (error) => {
+                error ? console.log(error) : console.log('README generated!');
+            });
         })
 }
 
