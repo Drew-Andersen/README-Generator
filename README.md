@@ -2,7 +2,6 @@
 
 ## Video link 
 ** Add a short video on how to use the application **
-[Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 
 ## Images
 ** Add an image of the application **

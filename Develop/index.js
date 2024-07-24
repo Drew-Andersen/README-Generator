@@ -55,11 +55,9 @@ function init() {
             }
         ])
         .then((data) => {
-            fs.writeFile('README.md', generateMarkdown(data), (error) => {
-                error ? console.log(error) : console.log('README generated!');
-            });
-        })
+            writeToFile('README.md', generateMarkdown(data))
+    });
 }
 
 // Function call to initialize app
-init();
+init()
