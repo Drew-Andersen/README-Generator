@@ -46,7 +46,8 @@ function generateMarkdown(data) {
     # Description
     ${data.description}
 
-    ${data.installation !== '' ? '## Installation ' + data.installation : ''}
+    ## Installation
+    ${data.installation}
 
     ## Usage
     ${data.usage}

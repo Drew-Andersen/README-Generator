@@ -1,10 +1,10 @@
 # README Generator
 
 ## Video link 
-** Add a short video on how to use the application **
+https://drive.google.com/file/d/1oOr7dL2dYvtK9NOwkmZ5Nb8ATpWRX0WR/view
 
 ## Images
-** Add an image of the application **
+![Image of the termial questions to answer](<images/README Generator.png>)
 
 ## Table of Contents
 - [Description](#description)
